@@ -25,7 +25,7 @@ try:
 
 except (KeyError, FileNotFoundError, StreamlitSecretNotFoundError):
     st.error(
-        "GROQ_API_KEY is missing. "
+        "GROQ_APT_KEY is missing. "
         "Add it to your Streamlit secrets."
     )
     st.stop()
