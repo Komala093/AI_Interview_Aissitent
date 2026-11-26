@@ -17,11 +17,11 @@ st.caption("Launched by: Komala ")
 st.write("Department of AI & DS")
 
 try:
-    api_key = st.secrets["GROQ_API_KEY"]
+    api_key = st.secrets["GROQ_APT_KEY"]
 
     client = Groq(api_key=api_key)
 
-    st.success("API connection successful!")
+    st.write("API connection successful!")
 
 except (KeyError, FileNotFoundError, StreamlitSecretNotFoundError):
     st.error(
