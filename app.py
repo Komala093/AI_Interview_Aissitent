@@ -21,14 +21,14 @@ st.divider()
 
 try:
     client = Groq(
-        api_key=st.secrets["GROQ_ATP_KEY"]
+        api_key=st.secrets["GROQ_API_KEY"]
     )
 
-    st.success("ATP connection successful")
+    st.success("API connection successful")
 
 except (KeyError, FileNotFoundError):
     st.error(
-        "GROQ_ATP_KEY is missing. "
+        "GROQ_API_KEY is missing. "
         "Add it to Streamlit Cloud settings."
     )
     st.stop()
