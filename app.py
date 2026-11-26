@@ -14,21 +14,21 @@ st.caption(
     "and constructive feedback."
 )
 
-st.caption("Launched by Komala")
+st.caption("Launched by Krutika")
 st.write("Department of AI&DS")
 
 st.divider()
 
 try:
     client = Groq(
-        api_key=st.secrets["GROQ_API_KEY"]
+        api_key=st.secrets["GROQ_ATP_KEY"]
     )
 
-    st.success("API connection successful")
+    st.success("ATP connection successful")
 
 except (KeyError, FileNotFoundError):
     st.error(
-        "GROQ_API_KEY is missing. "
+        "GROQ_ATP_KEY is missing. "
         "Add it to Streamlit Cloud settings."
     )
     st.stop()
