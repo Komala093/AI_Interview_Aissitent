@@ -14,7 +14,7 @@ st.caption(
     "and constructive feedback."
 )
 
-st.caption("Launched by Krutika")
+st.caption("Launched by KOMALA")
 st.write("Department of AI&DS")
 
 st.divider()
